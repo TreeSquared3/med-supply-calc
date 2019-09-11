@@ -1,0 +1,33 @@
+#entries {
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+}
+
+#name {
+    align-content: center;
+}
+
+#btn-add-row {
+    width: 48px;
+    height: 32px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#btn-remove-row {
+    width: 48px;
+    height: 32px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.text-input {
+    height: 32px;
+}
+
+.number-input {
+    height: 32px;
+}

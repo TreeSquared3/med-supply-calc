@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/> 
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script>
+            localStorage.clear();
+        </script>
+    </head>
+    <body>
+        <h1>Medical Supply Calculator</h1>
+        <div id="entries">
+            <div id="name">
+                <p>Name</p>
+            </div>
+            <div id="package-size">
+                <p>Package Size</p>
+            </div>
+            <div id="usage-per-day">
+                <p>Usage Per Day</p>
+            </div>
+            <div id="remaining-packages">
+                <p>Remaining Packages</p>
+            </div>
+            <div id="tolerance">
+                <p>Tolerance in %</p>
+            </div>
+            <div id="wanted-days-to-last">
+                <p>Wanted Days To Last</p>
+                <input class="number-input" id="wanted-days-to-last-1" type="number" min="0" value="" onkeyup="saveValue(this);">
+            </div>
+        </div>
+        <br>
+        <input id="btn-remove-row" type="button" value="-" onclick="removeRow();">
+        <input id="btn-add-row" type="button" value="+" onclick="addRow('','','','','');">
+        <input id="btn-calculate" type="button" value="CALC" onclick="calculate();">
+
+        <div id="results">
+
+        </div>
+        
+        <script src="code.js"></script>
+        <script>
+            addRow('Infusion Sets','10','0.33','0','15');
+            addRow('Sensors','5','0.17','0','20');
+            addRow('Lancets','50','4','0','10');
+        </script>
+    </body>
+</html>
